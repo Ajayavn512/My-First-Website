@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ajay's Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            AJAY
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                👋 Hello, I'm
+            </p>
+
+            <h1>
+                Ajay
+            </h1>
+
+            <h2>
+                Web Developer & Digital Creator 🚀
+            </h2>
+
+            <p class="hero-description">
+                I create modern websites, creative designs
+                and engaging digital content.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#services" class="hero-button">
+                    View My Services
+                </a>
+
+                <a href="#contact" class="hero-button secondary-button">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section id="about" class="section">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+
+                <img src="profile.png" alt="Ajay Profile Photo">
+
+            </div>
+
+            <div class="about-content">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Ajay.
+                    I am a B.Com student and I am learning
+                    Web Development, Design and Digital Skills.
+                </p>
+
+                <p>
+                    I enjoy creating websites, editing videos
+                    and learning new technology.
+                </p>
+
+                <div class="skills">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Video Editing</span>
+                    <span>Graphic Design</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services Section -->
+
+    <section id="services" class="section">
+
+        <h2>My Services 💼</h2>
+
+        <div class="services-container">
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎨
+                </div>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Creative posters, thumbnails
+                    and social media designs.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🎬
+                </div>
+
+                <h3>Video Editing</h3>
+
+                <p>
+                    Professional video editing
+                    for social media and YouTube.
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🌐
+                </div>
+
+                <h3>Website Design</h3>
+
+                <p>
+                    Modern and responsive websites
+                    for personal and business use.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+
+    <section id="projects" class="section">
+
+        <h2>My Projects 💻</h2>
+
+        <p class="projects-intro">
+            Here are some of my creative projects.
+        </p>
+
+        <div class="projects-container">
+
+
+            <!-- Project 1 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="website.jpg"
+                        alt="My First Website Project"
+                    >
+
+                </div>
+
+                <h3>My First Website</h3>
+
+                <p>
+                    A modern website created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <a href="#home" class="project-button">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Project 2 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="video-editing.jpg"
+                        alt="Video Editing Project"
+                    >
+
+                </div>
+
+                <h3>Video Editing</h3>
+
+                <p>
+                    Creative video editing and
+                    digital content creation project.
+                </p>
+
+                <a href="#services" class="project-button">
+                    View Project
+                </a>
+
+            </div>
+
+
+            <!-- Project 3 -->
+
+            <div class="project-card">
+
+                <div class="project-image">
+
+                    <img
+                        src="graphic-design.jpg"
+                        alt="Graphic Design Project"
+                    >
+
+                </div>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                    Creative thumbnails, posters and
+                    social media design projects.
+                </p>
+
+                <a href="#services" class="project-button">
+                    View Project
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="section">
+
+        <div class="contact-card">
+
+            <h2>Contact Me 📩</h2>
+
+            <p>
+                Have a question or want to work together?
+                Send me a message.
+            </p>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="messageBox"
+                    placeholder="Write your message..."
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Message 🚀
+                </button>
+
+            </form>
+
+            <p id="formMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
