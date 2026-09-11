@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ajayavn512.github.io/My-First-Website/sitemap.xml
