@@ -3991,4 +3991,476 @@ a {
         padding-right: 18px;
     }
 
+}/* ========================================
+   PREMIUM PROFESSIONAL BACKGROUND
+======================================== */
+
+body {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 140, 255, 0.14),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(155, 0, 255, 0.12),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 50% 80%,
+            rgba(0, 110, 255, 0.08),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #05070d 0%,
+            #080b14 45%,
+            #05060b 100%
+        );
+
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/* Soft professional glow */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    top: 5%;
+    left: -180px;
+
+    background: radial-gradient(
+        circle,
+        rgba(0, 140, 255, 0.10),
+        transparent 70%
+    );
+
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* Purple glow */
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    bottom: 5%;
+
+    background: radial-gradient(
+        circle,
+        rgba(155, 0, 255, 0.09),
+        transparent 70%
+    );
+
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+/* Professional subtle grid */
+
+.section {
+    position: relative;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent,
+        black 15%,
+        black 85%,
+        transparent
+    );
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep section content above background */
+
+.section > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Hero extra glow */
+
+.hero {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            rgba(0, 140, 255, 0.10),
+            transparent 35%
+        );
+}
+
+
+/* Navbar premium glass effect */
+
+.navbar {
+    background: rgba(5, 8, 15, 0.72) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid
+        rgba(255,255,255,0.08);
+}
+
+
+/* Mobile optimization */
+
+@media (max-width: 650px) {
+
+    body::before {
+        width: 300px;
+        height: 300px;
+        left: -150px;
+    }
+
+    body::after {
+        width: 300px;
+        height: 300px;
+        right: -150px;
+    }
+
+    .section::before {
+        background-size: 40px 40px;
+    }
+
+}/* ========================================
+   FULL WEBSITE PREMIUM BACKGROUND
+======================================== */
+
+html,
+body {
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(0, 140, 255, 0.13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(155, 0, 255, 0.11),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 20% 55%,
+            rgba(0, 140, 255, 0.08),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 80% 75%,
+            rgba(155, 0, 255, 0.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #03050a 0%,
+            #070b14 35%,
+            #050812 65%,
+            #03050a 100%
+        ) !important;
+
+    background-attachment: fixed !important;
+}
+
+
+/* Remove separate dark backgrounds
+   from individual sections */
+
+.hero,
+.section,
+.about,
+.services,
+.projects,
+.gallery,
+.skills,
+.contact,
+.footer {
+    background: transparent !important;
+}
+
+
+/* Premium subtle grid over the ENTIRE website */
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 70px 70px;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Blue ambient light */
+
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 700px;
+    height: 700px;
+
+    top: 35%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(0, 140, 255, 0.07),
+        transparent 68%
+    );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep all website content above background */
+
+.navbar,
+.hero,
+.section,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Keep cards readable */
+
+.about-card,
+.project-card,
+.contact-card,
+.service-card,
+.skill-card {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    body::before {
+        background-size: 45px 45px;
+    }
+
+    body::after {
+        width: 400px;
+        height: 400px;
+    }
+
+}/* ========================================
+   AJAY PORTFOLIO - FULL PAGE BACKGROUND
+======================================== */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(0, 140, 255, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(140, 0, 255, 0.14),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 70%,
+            rgba(0, 110, 255, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(150, 0, 255, 0.09),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #03050a 0%,
+            #080c16 35%,
+            #050812 65%,
+            #020409 100%
+        ) !important;
+
+    background-attachment: fixed !important;
+}
+
+
+/* Remove black backgrounds from sections */
+
+section,
+.section,
+.hero,
+footer,
+.footer {
+    background-color: transparent !important;
+}
+
+
+/* Premium futuristic grid */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.018) 1px,
+            transparent 1px
+        );
+
+    background-size: 65px 65px;
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Ambient blue/purple light */
+
+body::after {
+    content: "";
+    position: fixed;
+
+    width: 750px;
+    height: 750px;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(0, 140, 255, 0.075),
+        transparent 68%
+    );
+
+    filter: blur(35px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* Keep website content above background */
+
+.navbar,
+section,
+.section,
+footer,
+.footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Cards stay visible */
+
+.about-card,
+.project-card,
+.service-card,
+.contact-card,
+.skill-card,
+.premium-gallery-item {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Navbar glass effect */
+
+.navbar {
+    background: rgba(3, 6, 12, 0.78) !important;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.08);
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+    body::before {
+        background-size: 42px 42px;
+    }
+
+    body::after {
+        width: 450px;
+        height: 450px;
+    }
+
 }
